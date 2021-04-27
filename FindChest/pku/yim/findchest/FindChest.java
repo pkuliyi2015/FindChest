@@ -51,10 +51,10 @@ public class FindChest extends JavaPlugin {
         }else{
             Player player = (Player) sender;
             if(args.length==1&&args[0].equalsIgnoreCase("help")){
-                player.sendMessage("====================命令指南=====================");
-                player.sendMessage("/findchest -- 在附近箱子中寻找与手中物品相同的物品，空手则找任意箱子");
-                player.sendMessage("/findchest full -- 寻找满箱(必须空手）");
-                player.sendMessage("===============================================");
+                player.sendMessage("§a====================命令指南=====================");
+                player.sendMessage("§a/findchest -- 在附近箱子中寻找与手中物品相同的物品，空手则找任意箱子");
+                player.sendMessage("§a/findchest full -- 寻找满箱(必须空手）");
+                player.sendMessage("§a===============================================");
                 return true;
             }
             if(!player.hasPermission("findchest"))return true;
@@ -64,7 +64,7 @@ public class FindChest extends JavaPlugin {
                 lastUseTime.put(player,System.currentTimeMillis());
                 ChestFinder.FindChest(player, args.length == 1);
             }else{
-                player.sendMessage(String.format("您还需要%d毫秒才能使用本功能", time));
+                player.sendMessage(String.format("§c您还需要%d毫秒才能使用本功能", time));
             }
         }
 
