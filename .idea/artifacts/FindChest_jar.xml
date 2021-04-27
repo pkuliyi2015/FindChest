@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FindChest:jar">
+    <output-path>$PROJECT_DIR$/out/</output-path>
+    <root id="archive" name="FindChest.jar">
+      <element id="module-output" name="FindChest" />
+    </root>
+  </artifact>
+</component>

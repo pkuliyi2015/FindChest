@@ -1,0 +1,10 @@
+name: DropCollect
+main: pku.yim.dropcollect.DropCollect
+version: 3.8.1
+author: YiMiner
+softdepend: [ProtocolLib]
+api-version: 1.13
+commands:
+  dropcollect:
+    permission: dropcollect.get
+    description: get collector

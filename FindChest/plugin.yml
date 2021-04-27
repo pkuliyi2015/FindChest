@@ -1,0 +1,10 @@
+name: FindChest
+main: pku.yim.findchest.FindChest
+version: 1.0.0
+author: YiMiner
+softdepend: [ProtocolLib]
+api-version: 1.13
+commands:
+  findchest:
+    permission: findchest
+    description: find chest with specific item
