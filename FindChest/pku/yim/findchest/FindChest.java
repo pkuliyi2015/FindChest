@@ -50,6 +50,13 @@ public class FindChest extends JavaPlugin {
             this.getLogger().info("===============================================");
         }else{
             Player player = (Player) sender;
+            if(args.length==1&&args[0].equalsIgnoreCase("help")){
+                player.sendMessage("====================命令指南=====================");
+                player.sendMessage("/findchest -- 在附近箱子中寻找与手中物品相同的物品，空手则找任意箱子");
+                player.sendMessage("/findchest full -- 寻找满箱(必须空手）");
+                player.sendMessage("===============================================");
+                return true;
+            }
             if(!player.hasPermission("findchest"))return true;
             lastUseTime.putIfAbsent(player, (long)0);
             long time = System.currentTimeMillis()-lastUseTime.get(player);
